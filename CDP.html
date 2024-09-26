@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .title {
+        border: none;
+        height: 50px;
+        width: 98%;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        background: rgba(255, 216, 157, 0.562);
+
+
+    }
+
+    form {
+        width: 100%;
+        height: 700px;
+        background: #c2dbe7;
+
+
+
+    }
+
+    .labelFormat {
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+
+    .InputFormat {
+        width: 98%;
+        height: 35px;
+        margin-left: 5px;
+
+
+    }
+
+    #RegBtn {
+        background-color: #31f05a;
+        color: rgb(20, 10, 117);
+    }
+
+    .EmployeeDataTable {
+        border: 1px solid red;
+        width: 98%;
+        height: 200px;
+        border-collapse: collapse;
+    }
+
+    table,
+    tr,
+    th,
+    td {
+        border: 1px solid red;
+
+    }
+
+    td {
+        height: 70px;
+    }
+
+    .EmpDetailsDiv {
+        border: none;
+        height: 100px;
+        font-size: 40px;
+        text-align: center;
+        background: #8969c5;
+        width: 98%;
+
+
+
+    }
+
+    #subrootEmpDetaillDiv {
+        margin-top: 20px;
+        border: 1px solid blue;
+        height: auto;
+
+    }
+
+    #rootEmployeeList {
+        height: 300px;
+
+    }
+
+    #Emp-List-title-div {
+        /* border: 1px solid blue; */
+        height: 75px;
+        width: 98%;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        background: #67d89a;
+        margin-top: 5px;
+    }
+
+    #EmpListTable {
+        width: 98%;
+        border-collapse: collapse;
+
+    }
+
+    .EmpListNo-td {
+        width: 50px;
+    }
+</style>
+
+<body>
+    <div class="title">company Directory Portal</div>
+    <form>
+        <label for="" class="labelFormat">Full Name:</label>
+        <br>
+        <input type="text" id="fullNameInputBox" class="InputFormat">
+        <br>
+        <label for="" class="labelFormat">Email:</label>
+        <br>
+        <input type="email" id="EmailInputBox" class="InputFormat">
+        <br>
+        <label for="" class="labelFormat">Department:</label>
+        <br>
+        <select name="" id="" class="InputFormat">
+            <option value="">computer Science</option>
+            <option value="">UIC</option>
+            <option value="">CS</option>
+            <option value="">IT</option>
+            <option value="">Non tech</option>
+        </select>
+        <br>
+        <label for="" class="labelFormat">Employee ID:</label>
+        <br>
+        <input type="text" id="EmployeeIdInputBox" class="InputFormat">
+        <br>
+        <label for="" class="labelFormat">Profile Picture url:</label>
+        <br>
+        <input type="text" id="ProfilePictureUrlInputBox" class="InputFormat">
+        <br>
+        <br>
+        <button type="button" id="RegBtn" class="InputFormat">Register Employee</button>
+        <br>
+        <br>
+        <div id="rootEmployeeList">
+            <div id="Emp-List-title-div">Employee List</div>
+            <br>
+            <br>
+            <table id="EmpListTable">
+                <tr>
+                    <td class="EmpListNo-td">1</td>
+                    <td><a href="#">syz@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="#">abc@gmail.com</a></td>
+                </tr>
+            </table>
+        </div>
+
+    </form>
+
+    <div id="subrootEmpDetaillDiv">
+        <form>
+            <div class="EmpDetailsDiv">Employee Details</div>
+
+            <table class="EmployeeDataTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Employee Id</th>
+                    <th>Department</th>
+                    <th>Image url</th>
+                </tr>
+                <tr>
+                    <td>Amit Kumar</td>
+                    <td>Amitkumar_in92329</td>
+                    <td>Itcs</td>
+                    <td>15*20</td>
+                </tr>
+                <tr>
+                    <td>Inderjeet Kumar</td>
+                    <td>Amitkumar_in92329</td>
+                    <td>Itcs</td>
+                    <td>15*20</td>
+                </tr>
+
+            </table>
+
+
+        </form>
+    </div>
+    <br>
+    <br>
+
+
+</body>
+
+</html>
